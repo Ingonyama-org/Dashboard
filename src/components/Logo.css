@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo > .i_logo {
+  background-color: #37db8a;
+  color: #fff;
+  border-radius: 10px;
+  width: 56px;
+  text-align: center;
+}
+.logo > .logo_text {
+  margin-left: 20px;
+  color: white;
+}

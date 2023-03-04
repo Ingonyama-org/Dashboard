@@ -1,0 +1,79 @@
+.base_registration {
+  background-image: url("../img/pexels-gary-whyte-730536.jpg.crdownload");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+}
+.base_registration::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.632);
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome_div {
+  color: white;
+  width: 40vw;
+}
+.welcome_div > .inner_welcome_div {
+  width: 50%;
+}
+.welcome_div > .inner_welcome_div > h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60.24px;
+}
+.welcome_div > .inner_welcome_div > p {
+  font-size: 36px;
+  line-height: 45px;
+  margin-top: 20px;
+}
+
+.base_registration_div {
+  background-color: white;
+  width: 40vw;
+  height: 80vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.base_registration_div > .btn {
+  background-color: #00a654;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border-radius: 10px;
+}
+.base_registration_div > .btn > p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.base_registration_div > .to_login > p > span {
+  color: #00a654;
+  font-weight: 700;
+}
