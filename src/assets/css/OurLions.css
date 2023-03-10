@@ -1,0 +1,204 @@
+.ourlions {
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.identified_lions > .identified_lions_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.identified_lions > .identified_lions_header > h2 {
+  color: #181b1a;
+}
+.identified_lions > .identified_lions_header > .find_btn {
+  background-color: #00a654;
+  color: white;
+  width: 160px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.identified_lions > .identified_lions_header > .find_btn:hover {
+  box-shadow: 0px 0px 10px #00000098;
+  border: 1px solid #d3d3d3;
+  scale: 1.02;
+}
+.identified_lions > .images {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 180px 180px;
+  gap: 20px;
+  animation-name: identified_images;
+  animation-duration: 2s;
+}
+
+.identified_lions > .images > .image_div {
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: 4px 3px #0000007b;
+}
+.identified_lions > .images > .image_div:hover {
+  border-radius: 0;
+  scale: 1.07;
+  box-shadow: 0px 0px 20px #000;
+}
+
+.identified_lions > .images > .image_div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #181b1a4c;
+  border-radius: 20px;
+  transition: 0.5s;
+  animation-name: identified_shadow;
+  animation-duration: 1s;
+}
+
+.identified_lions > .images > .image_div:hover:before {
+  top: 70%;
+  border-radius: 0;
+  background-color: #181b1ad9;
+}
+.identified_lions > .images > .image_div > .image_detail_div {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.identified_lions
+  > .images
+  > .image_div
+  > .image_detail_div
+  > .name_age
+  > p:nth-child(2) {
+  font-weight: 400;
+}
+.identified_lions > .images > .image_div > .image_detail_div > .park_name {
+  padding: 5px;
+  font-size: 10px;
+  background-color: #fb6d3a;
+  border-radius: 5px;
+}
+
+.pending_lions {
+  width: 100%;
+}
+.pending_lions > .pending_lions_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pending_lions > .images {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-around;
+  overflow-x: scroll;
+  align-items: center;
+  animation-name: pending_images;
+  animation-duration: 2s;
+}
+
+.pending_lions > .images > .image {
+  width: 96px;
+  height: 150px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.pending_lions > .images > .image:hover {
+  border-radius: 0;
+  scale: 1.07;
+}
+
+.pending_lions > .images > .image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #181b1a36;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.pending_lions > .images > .image:hover::before {
+  bottom: 100%;
+  border-radius: 0;
+  background-color: #fb6d3aed;
+}
+
+.pending_lions > .images > .image > div {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: #fb6d3a;
+  padding: 2px 5px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+@keyframes identified_shadow {
+  0% {
+    top: 100%;
+    border-radius: 0;
+    background-color: #181b1a4c;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+@keyframes identified_images {
+  0% {
+    scale: 0.7;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+@keyframes pending_images {
+  0% {
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 1;
+  }
+}

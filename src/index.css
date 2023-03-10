@@ -3,11 +3,15 @@
 }
 body {
   margin: 0;
-  font-family: "Mulish";
+  font-family: "Poppins";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

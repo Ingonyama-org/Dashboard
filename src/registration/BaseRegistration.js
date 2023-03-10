@@ -1,13 +1,16 @@
 import React from "react";
-import { Link, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../assets/css/BaseRegistration.css";
 import Logo from "../components/Logo";
 
-export default function BaseRegistration({ title, inputDiv, btntext }) {
+export default function BaseRegistration({
+  title,
+  titleaction,
+  inputDiv,
+  btntext,
+}) {
   return (
     <div className="base_registration">
-      {/* <Link to={"/dashboard"}>{btntext}</Link> */}
-
       <header>
         <Logo />
       </header>
@@ -20,16 +23,19 @@ export default function BaseRegistration({ title, inputDiv, btntext }) {
         </div>
 
         <div className="base_registration_div">
-          <h2>Sign up</h2>
+          <h2>{titleaction}</h2>
 
           {inputDiv}
 
-          {/* <ul className="btn"> */}
-          {/* </ul> */}
+          <div className="btn">
+            <Link className="link" to={"/dashboard"}>
+              {btntext}
+            </Link>
+          </div>
 
           <div className="to_login">
             <p>
-              Do you already have an account? <span>Login here</span>
+              {/* Do you already have an account? <span>Login here</span> */}
             </p>
           </div>
         </div>

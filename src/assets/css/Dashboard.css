@@ -1,0 +1,155 @@
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.salute {
+  height: 10vh;
+}
+.salute > h1 {
+  color: #00a654;
+}
+.salute > h1 > span {
+  font-weight: 400;
+}
+.salute > h1 {
+  color: #00a654;
+}
+.salute > p {
+  color: #babec6;
+  font-size: 17px;
+  line-height: 25.5px;
+}
+
+.status {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+.status > .status_card {
+  background-color: #fff;
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  animation-name: status_card;
+  animation-duration: 1s;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #d3d3d3;
+  transition: 0.5s;
+}
+.status > .status_card:hover {
+  scale: 1.1;
+  box-shadow: 0px 0px 30px #00000062;
+}
+.status > .status_card > p {
+  color: #babec6;
+}
+.status > .status_card > div {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+}
+.status > .status_card > div > .status_icon_div {
+  width: 53px;
+  height: 53px;
+  border-radius: 50px;
+  background: linear-gradient(128.58deg, #00a654 42.84%, #e49531 86.8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status > .status_card > div > .status_icon_div > .status_icon {
+  font-size: 23px;
+  color: #fff;
+}
+
+.status > .status_card > div > h3 {
+  color: #fb6d3a;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.statistics {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.statistics > .stats_div {
+  width: 40%;
+  height: 100;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  transition: 0.5s;
+
+  box-shadow: 0px 3px #d3d3d3;
+}
+.statistics > .stats_div:hover {
+  scale: 1.1;
+  box-shadow: 2px 0px 10px #d3d3d3;
+}
+.statistics > .stats_div > .stat_title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.statistics > .stats_div > .graph_and_keys {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.statistics > .stats_div > .graph_and_keys > .graph_keys > ul > li {
+  margin-bottom: 10px;
+}
+.statistics
+  > .stats_div
+  > .graph_and_keys
+  > .graph_keys
+  > ul
+  > li
+  > p:nth-child(1) {
+  color: #7c7c82;
+}
+.statistics
+  > .stats_div
+  > .graph_and_keys
+  > .graph_keys
+  > ul
+  > li
+  > p:nth-child(2) {
+  color: #1f1e3d;
+}
+
+.progress_div {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes status_card {
+  0% {
+    left: 100vh;
+    z-index: -1999;
+  }
+
+  100% {
+    left: 0vh;
+    z-index: 1;
+  }
+}

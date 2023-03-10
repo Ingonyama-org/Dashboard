@@ -1,10 +1,9 @@
 .base_registration {
   background-image: url("../img/pexels-gary-whyte-730536.jpg.crdownload");
-  width: 100vw;
-  height: 100vh;
   background-position: center;
   background-size: cover;
-  padding: 20px;
+  width: 100vw;
+  height: 100vh;
 }
 .base_registration::before {
   content: "";

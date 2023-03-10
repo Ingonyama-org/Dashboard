@@ -1,6 +1,7 @@
 .logo {
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 .logo > .i_logo {
   background-color: #37db8a;

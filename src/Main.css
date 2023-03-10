@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  flex: 1;
+}
+.sidebar_ {
+  flex: 0.2;
+}
+.mains {
+  flex: 0.8;
+}
